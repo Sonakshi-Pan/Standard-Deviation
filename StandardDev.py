@@ -7,13 +7,12 @@ with open("Standard.csv",newline="") as f:
 
 #print(data) 
 
-data.pop(0)
+
 
 new_data = []
  
-for i in range(len(data)):
-    n = data[i][1]
-    new_data.append(float(n))
+for i in range(len(data[0])):
+   n = data[0][i]
 
 def mean(d):
     total =0
@@ -36,6 +35,7 @@ for i in new_data:
 result=mean(sq)
 
 stand=math.sqrt(result)
+print(stand)
 
 
 
